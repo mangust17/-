@@ -1,0 +1,70 @@
+@startuml
+actor Оператор as O
+participant "Система" as S
+participant "База Данных" as DB
+
+O -> S: Авторизация()
+activate S
+
+S -> DB: Проверка учетных данных()
+activate DB
+
+alt Успешная авторизация
+    DB --> S: Успешная проверка()
+    S --> O: Успешная авторизация()
+else Ошибка авторизации
+    DB --> S: Неверные учетные данные()
+    S --> O: Ошибка авторизации
+end
+deactivate DB
+deactivate S
+
+O -> S: Просмотр заявок()
+activate S
+
+S -> DB: Запрос на список заявок()
+activate DB
+DB --> S: Список заявок()
+deactivate DB
+
+S --> O: Отобразить заявки()
+deactivate S
+
+O -> S: Обработка заявки()
+activate S
+
+S -> DB: Запрос на детали заявки()
+activate DB
+DB --> S: Детали заявки()
+deactivate DB
+
+S --> O: Отобразить детали заявки()
+deactivate S
+
+O -> S: Назначение исполнителя()
+activate S
+
+S -> DB: Сохранение исполнителя()
+activate DB
+
+alt Успешное сохранение
+    DB --> S: Успешное сохранение()
+    S --> O: Исполнитель назначен()
+else Ошибка сохранения
+    DB --> S: Ошибка сохранения()
+    S --> O: Ошибка при назначении исполнителя
+end
+deactivate DB
+deactivate S
+
+O -> S: Мониторинг и анализ()
+activate S
+
+S -> DB: Запрос на отчеты()
+activate DB
+DB --> S: Отчеты по заявкам()
+deactivate DB
+
+S --> O: Отобразить отчеты()
+deactivate S
+@enduml

@@ -1,0 +1,12 @@
+E:\уч практика\задание6\DatabaseController\DatabaseController\bin\Debug\DatabaseController.dll
+E:\уч практика\задание6\DatabaseController\DatabaseController\bin\Debug\DatabaseController.pdb
+E:\уч практика\задание6\DatabaseController\DatabaseController\obj\Debug\DatabaseController.csproj.AssemblyReference.cache
+E:\уч практика\задание6\DatabaseController\DatabaseController\obj\Debug\DatabaseController.csproj.CoreCompileInputs.cache
+E:\уч практика\задание6\DatabaseController\DatabaseController\obj\Debug\DatabaseController.dll
+E:\уч практика\задание6\DatabaseController\DatabaseController\obj\Debug\DatabaseController.pdb
+H:\Практика\задание6\DatabaseController\DatabaseController\bin\Debug\DatabaseController.dll
+H:\Практика\задание6\DatabaseController\DatabaseController\bin\Debug\DatabaseController.pdb
+H:\Практика\задание6\DatabaseController\DatabaseController\obj\Debug\DatabaseController.csproj.AssemblyReference.cache
+H:\Практика\задание6\DatabaseController\DatabaseController\obj\Debug\DatabaseController.csproj.CoreCompileInputs.cache
+H:\Практика\задание6\DatabaseController\DatabaseController\obj\Debug\DatabaseController.dll
+H:\Практика\задание6\DatabaseController\DatabaseController\obj\Debug\DatabaseController.pdb

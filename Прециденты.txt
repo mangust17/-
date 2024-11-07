@@ -1,0 +1,47 @@
+@startuml
+actor Клиент as C
+actor Оператор as O
+actor Мастер as T
+
+
+package "Модуль работы с заявками" {
+    usecase "Создание заявки" as UC1
+    usecase "Просмотр заявок" as UC2
+    usecase "Регистрация заявки" as UC3
+    usecase "Обработка заявки" as UC4
+    usecase "Просмотр заявок" as UC16
+    usecase "Назначение исполнителя" as UC5
+    usecase "Назначение приоритета" as UC9
+    usecase "Мониторинг и анализ" as UC8
+    usecase "Написание коментариев к ремонту" as UC6
+    usecase "Просмотр заявок" as UC7
+    usecase "Поиск" as UC10
+    usecase "Фильтрация" as UC11
+    usecase "Редактирование заявки" as UC12
+    usecase "Авторизация" as UC13
+    usecase "Указание этапа ремонта" as UC14
+    usecase "Создание записи о заказанных запчастях" as UC15
+}
+
+
+C -- UC1
+C -- UC2
+O -- UC3
+O -- UC8
+O -- UC16
+T -- UC6
+T -- UC7
+T -- UC13
+O -- UC13
+C -- UC13
+
+UC2 .down.> UC10 : <<расширить>>
+UC2 .down.> UC11 : <<расширить>>
+UC2 .down.> UC12 : <<расширить>> 
+UC4 .down.> UC5 : <<расширить>> 
+UC4 .down.> UC9 : <<расширить>>
+UC7 .down.> UC14 : <<расширить>>  
+UC7 .down.> UC15 : <<расширить>>
+UC16 .down.> UC4 : <<расширить>>
+
+@enduml
